@@ -45,7 +45,7 @@ This is a ride-sharing application built with React Native and Expo. The app all
 
 4. Start the development server:
    ```bash
-   npm start
+   npx expo start
    ```
 
 ## Usage
