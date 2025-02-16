@@ -1,50 +1,68 @@
-# Welcome to your Expo app 👋
+# Ride Sharing App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Overview
 
-## Get started
+This is a ride-sharing application built with React Native and Expo. The app allows users to find rides, choose drivers, and manage their ride history. It integrates with Google Places API for location services and Clerk for authentication.
 
-1. Install dependencies
+## Features
 
+- User authentication (sign up, sign in)
+- Search for rides using Google Places
+- View available drivers and their details
+- Book rides and manage ride history
+- Responsive design with Tailwind CSS
+
+## Technologies Used
+
+- **React Native**: For building the mobile application.
+- **Expo**: For rapid development and deployment.
+- **Zustand**: For state management.
+- **Clerk**: For user authentication.
+- **Google Places API**: For location services.
+- **Tailwind CSS**: For styling.
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/ride-sharing-app.git
+   cd ride-sharing-app
+   ```
+
+2. Install dependencies:
    ```bash
    npm install
    ```
 
-2. Start the app
+3. Set up environment variables:
+   - Create a `.env` file in the root directory and add your API keys:
+     ```
+     EXPO_PUBLIC_GOOGLE_API_KEY=your_google_api_key
+     EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+     EXPO_PUBLIC_GEOAPIFY=your_geoapify_key
+     DATABASE_URL=your_database_url
+     ```
 
+4. Start the development server:
    ```bash
-    npx expo start
+   npm start
    ```
 
-In the output, you'll find options to open the app in a
+## Usage
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- **Sign Up / Sign In**: Users can create an account or log in using their email and password.
+- **Find a Ride**: Users can search for rides by entering their destination.
+- **Choose a Driver**: Users can view available drivers and select one for their ride.
+- **Book a Ride**: Users can confirm their ride and view ride details.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Contributing
 
-## Get a fresh project
+Contributions are welcome! Please open an issue or submit a pull request for any enhancements or bug fixes.
 
-When you're ready, run:
+## License
 
-```bash
-npm run reset-project
-```
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Acknowledgments
 
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- Thanks to the open-source community for the libraries and tools that made this project possible.
